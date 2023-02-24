@@ -15,8 +15,8 @@ FillArray(matrix);
 System.Console.WriteLine();
 PrintArray(matrix);
 
-if (rows-1 < matrix.GetLength(0) && colums-1 < matrix.GetLength(1)) Console.WriteLine(matrix[rows-1, colums-1]);
-else Console.WriteLine($"{rows-1}, {colums-1} -> такого числа в массиве нет");
+if (rows - 1 < matrix.GetLength(0) && colums - 1 < matrix.GetLength(1)) Console.WriteLine(matrix[rows - 1, colums - 1]);
+else Console.WriteLine($"{rows - 1}, {colums - 1} -> такого числа в массиве нет");
 
 void PrintArray(int[,] matr)
 {
