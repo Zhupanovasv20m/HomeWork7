@@ -8,9 +8,9 @@ int m = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите число n");
 int n = Convert.ToInt32(Console.ReadLine());
 
-int [,] matrix = new int [m, n];
+double [,] matrix = new double [m, n];
 
-void PrintArray (int [,] matr)
+void PrintArray (double [,] matr)
 {
 for (int i = 0; i< matr.GetLength(0); i++)
 {
@@ -22,13 +22,13 @@ for (int i = 0; i< matr.GetLength(0); i++)
 }
 }
 
-void FillArray (int [,] matr)
+void FillArray (double [,] matr)
 {
 for (int i = 0; i< matr.GetLength(0); i++)
 {
     for (int j = 0; j< matr.GetLength(1); j++)
     {
-       matr [i, j] = new Random().Next(1, 11);
+       matr [i, j] = new Random().Next(-100, 101) /10.0;
     }
 }
 }
