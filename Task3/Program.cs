@@ -19,7 +19,7 @@ for (int j = 0; j < matrix.GetLength(1); j++)
     {
         sum += matrix[i, j];
     }
-    double ArithmeticMean =  sum / matrix.GetLength(0);
+    double ArithmeticMean = sum / matrix.GetLength(0);
     System.Console.WriteLine($"Среднее арифметическое каждого столбца {ArithmeticMean}");
 }
 void PrintArray(int[,] matr)
