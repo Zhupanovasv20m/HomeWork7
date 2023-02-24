@@ -7,16 +7,8 @@ System.Console.WriteLine("Введите число m");
 int m = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите число n");
 int n = Convert.ToInt32(Console.ReadLine());
-int [,] matrix = new int [m, n];
-for (int i = 0; i< matrix.GetLength(0); i++)
-{
-    for (int j = 0; j< matrix.GetLength(1); j++)
-    {
-        Console.Write($"{matrix[i, j]} ");
-    }
-    System.Console.WriteLine();
-}
 
+int [,] matrix = new int [m, n];
 
 void PrintArray (int [,] matr)
 {
@@ -38,11 +30,11 @@ for (int i = 0; i< matr.GetLength(0); i++)
     {
        matr [i, j] = new Random().Next(1, 11);
     }
-    System.Console.WriteLine();
 }
 }
 
-PrintArray (matrix);
+
 FillArray(matrix);
 System.Console.WriteLine();
+System.Console.WriteLine($"m = {m}, n = {n}");
 PrintArray (matrix);
